@@ -1,0 +1,39 @@
+.cart__totalContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart__totalContainer__text {
+  color: var(--rose-900);
+}
+
+.cart__totalContainer__total {
+  color: var(--rose-900) !important;
+}
+
+.cart__carbon {
+  padding: var(--gap-4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-2);
+  border-radius: var(--gap-2);
+  background-color: var(--rose-50);
+}
+
+.cart__confirmBtn {
+  height: 5.3rem;
+  font-family: "Red Hat Text", sans-serif;
+  background: var(--red);
+  border: none;
+  border-radius: var(--gap-7);
+  color: var(--white);
+  transition: all 0.2s;
+}
+
+.cart__confirmBtn:hover {
+  cursor: pointer;
+  background: #952c0a;
+  transform: translateY(-0.5rem);
+}

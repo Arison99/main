@@ -1,0 +1,28 @@
+.login .img-container,
+.login {
+  width: 40%;
+}
+
+.login .form-control {
+  box-shadow: none !important;
+  border: 1px solid #ccc;
+}
+
+.login .form-control::placeholder {
+  color: rgba(252, 248, 243, 0.3);
+}
+
+.login .form-control:focus,
+.login .form-control:active {
+  border: 1px solid #ccc;
+}
+
+.login input[type="checkbox"] {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: 2px solid #ccc;
+}
+.login .form-check-label,
+.login .forgot-password {
+  font-family: var(--font-secondary);
+}

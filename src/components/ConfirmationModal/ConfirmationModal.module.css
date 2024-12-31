@@ -1,0 +1,121 @@
+.modal__header {
+  display: grid;
+  gap: var(--gap-5);
+}
+
+.modal__icon {
+  width: 4.8rem;
+}
+
+.modal__text {
+  display: grid;
+  gap: var(--gap-2);
+}
+
+.modal__heading {
+  color: var(--rose-900);
+}
+
+.modal__message {
+  color: var(--rose-500);
+  font-size: 1.6rem;
+}
+
+.modal__cart__container {
+  padding: var(--gap-5);
+  background-color: var(--rose-50);
+  border-radius: var(--gap-2);
+  display: grid;
+  gap: var(--gap-5);
+}
+
+.modal__cart {
+  display: grid;
+  gap: var(--gap-4);
+}
+
+.modal__cartItem {
+  list-style: none;
+  display: flex;
+  gap: var(--gap-4);
+}
+
+.modal__cartItem:not(:last-child) {
+  padding-bottom: var(--gap-4);
+  border-bottom: 1px solid var(--rose-100);
+}
+
+.modal__cartItem__image {
+  width: 4.8rem;
+  border-radius: var(--gap-1);
+}
+
+.modal__cartItem__details {
+  flex-grow: 2;
+  display: grid;
+  gap: var(--gap-2);
+}
+
+.modal__cartItem__name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: var(--rose-900);
+}
+
+.modal__cartItem__detailsSub {
+  display: flex;
+  gap: var(--gap-2);
+}
+
+.modal__cartItem__count {
+  color: var(--red);
+}
+
+.modal__cartItem__price {
+  color: var(--rose-500);
+}
+
+.modal__cartItem__total {
+  align-self: center;
+  color: var(--rose-900) !important;
+}
+
+.modal__cart__divider {
+  border: none;
+  height: 1px;
+  background-color: var(--rose-100);
+}
+
+.modal__cart__total__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__cart__total__container__text {
+  color: var(--rose-900) !important;
+}
+
+.modal__cart__total__container__amount {
+  color: var(--rose-900) !important;
+}
+
+.modal__btn {
+  height: 5.3rem;
+  border: none;
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: var(--gap-7);
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.modal__btn:hover {
+  cursor: pointer;
+  background-color: #952c0a;
+  transform: translateY(-0.5rem);
+}

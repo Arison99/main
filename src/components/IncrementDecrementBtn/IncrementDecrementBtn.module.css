@@ -1,0 +1,41 @@
+.btn {
+  justify-self: center;
+  margin-top: -3rem;
+  margin-bottom: var(--gap-4);
+  width: 16rem;
+  background: var(--red);
+  padding: var(--gap-3);
+  border-radius: var(--gap-7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Red Hat Text", sans-serif;
+  color: var(--white) !important;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-0.5rem);
+}
+
+.btn__decrement,
+.btn__increment {
+  background: none;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: grid;
+  place-items: center;
+}
+
+.btn__decrement:hover,
+.btn__increment:hover {
+  cursor: pointer;
+  background: var(--white);
+}
+
+.btn__decrement:hover path,
+.btn__increment:hover path {
+  fill: var(--red);
+}

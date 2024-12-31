@@ -1,0 +1,37 @@
+.cart__container {
+  display: grid;
+  gap: var(--gap-4);
+}
+
+.cart__illustration {
+  justify-self: center;
+}
+
+.cart__paragraph {
+  text-align: center;
+  color: var(--rose-500);
+}
+
+.cart__btn {
+  width: 16rem;
+  background: var(--white);
+  padding: var(--gap-3);
+  border: 1px solid var(--rose-400);
+  border-radius: var(--gap-7);
+  display: flex;
+  gap: var(--gap-2);
+  align-items: center;
+  justify-content: center;
+  font-family: "Red Hat Text", sans-serif;
+  color: var(--rose-900);
+  transition: all 0.2s;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.cart__btn:hover {
+  cursor: pointer;
+  color: var(--red);
+  border: 1px solid var(--red);
+  transform: translateY(-0.5rem);
+}

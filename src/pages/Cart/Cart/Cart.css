@@ -1,0 +1,32 @@
+.cart__section {
+  padding: var(--gap-5);
+  background-color: var(--white);
+  display: grid;
+  gap: var(--gap-5);
+  border-radius: var(--gap-3);
+  animation: moveInBottom 0.7s ease-in-out;
+}
+
+@media screen and (width >= 62.5em) {
+  .cart__section {
+    align-self: flex-start;
+    min-width: 30%;
+    padding-bottom: var(--gap-7);
+  }
+}
+
+.cart__heading {
+  color: var(--red) !important;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

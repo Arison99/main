@@ -1,0 +1,86 @@
+.contact {
+  margin-top: 10rem;
+}
+.contact .info-wrap {
+  margin-bottom: 30px;
+}
+
+.contact .info-item i {
+  font-size: 20px;
+  color: var(--red);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--red), transparent 40%);
+  margin-right: 15px;
+}
+
+.contact .info-item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.contact .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.contact .info-item:hover i {
+  background: var(--red);
+  color: var(--white);
+}
+
+@media (max-width: 575px) {
+  .contact {
+    padding: 20px;
+  }
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--rose-900);
+  background-color: var(--white);
+  border-color: color-mix(in srgb, var(--rose-900), transparent 80%);
+}
+
+.contact input[type="text"]:focus,
+.contact input[type="email"]:focus,
+.contact textarea:focus {
+  border-color: var(--red);
+}
+
+.contact input[type="text"]::placeholder,
+.contact input[type="email"]::placeholder,
+.contact textarea::placeholder {
+  color: color-mix(in srgb, var(--rose-900), transparent 70%);
+}
+
+.contact button[type="submit"] {
+  color: var(--rose-900);
+  background: var(--red);
+  font-weight: 400;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 40px;
+  border: 0;
+  border-radius: 4px;
+  transition: 0.5s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact button[type="submit"]:hover {
+  background-color: color-mix(in srgb, var(--red) 90%, white 10%);
+}

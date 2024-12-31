@@ -1,0 +1,22 @@
+.menu {
+  display: grid;
+  list-style: none;
+}
+
+.menu__image {
+  width: 100%;
+  border-radius: var(--gap-2);
+}
+
+.menu__text {
+  display: grid;
+  gap: var(--gap-1);
+}
+
+.menu__name {
+  color: var(--rose-900) !important;
+}
+
+.menu__price {
+  color: var(--red) !important;
+}

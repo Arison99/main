@@ -1,0 +1,70 @@
+.services {
+  text-align: center;
+}
+.service-row {
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.wedding-img,
+.food-img {
+  width: 25%;
+  border-radius: 30px;
+  float: left;
+  margin-right: 30px;
+}
+
+.cake-img {
+  width: 25%;
+  border-radius: 30px;
+  float: right;
+  margin-left: 30px;
+}
+
+.services .cta-btn {
+  color: var(--red);
+  border: 2px solid var(--red);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  flex-shrink: 0;
+}
+
+.services .cta-btn:first-child {
+  margin-right: 10px;
+}
+
+.services .cta-btn:hover {
+  background: color-mix(in srgb, var(--red), transparent 20%);
+  color: var(--rose-50);
+}
+
+@media (max-width: 767px) {
+  .wedding-img,
+  .food-img,
+  .cake-img,
+  .service-img {
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .services .cta-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .services .cta-btn {
+    font-size: 12px;
+  }
+}

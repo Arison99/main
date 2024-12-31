@@ -1,0 +1,45 @@
+.modal {
+  border: none;
+  min-width: 100vw;
+  padding: var(--gap-7) var(--gap-5) var(--gap-5);
+  margin-top: 9.5rem;
+  height: -webkit-fill-available;
+  display: grid;
+  gap: var(--gap-6);
+  border-top-left-radius: var(--gap-3);
+  border-top-right-radius: var(--gap-3);
+  animation: moveInBottom 0.7s ease-in-out;
+}
+
+@media screen and (width > 26.5625em) {
+  .modal {
+    min-width: 0;
+    width: auto;
+    max-width: 68.8rem;
+    height: max-content;
+    border-radius: var(--gap-3);
+    margin: auto;
+  }
+}
+
+@media screen and (width > 62.5em) {
+  .modal {
+    max-width: 59.2rem;
+  }
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

@@ -1,0 +1,13 @@
+.hero__p {
+  font-size: 1.4rem;
+  width: 89%;
+  margin-inline: auto;
+  margin-block: 2rem;
+}
+@media only screen and (min-width: 62.5em) {
+  .hero__p {
+    width: 48%;
+    font-size: 2rem;
+    margin-block: 2.5rem;
+  }
+}

@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.category {
+  display: grid;
+  list-style: none;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.category::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 80%;
+  bottom: 0;
+  z-index: 2;
+  background: linear-gradient(0deg, rgb(0 0 0 / 0.8), rgb(0 0 0 / 0));
+}
+
+.category__image {
+  width: 100%;
+  border-radius: var(--gap-2);
+  transition: all 0.3s ease-in;
+}
+
+.category__image:hover {
+  transform: scale(1.1);
+}
+
+.category__text {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  right: 10%;
+  display: grid;
+  z-index: 2;
+  gap: var(--gap-1);
+}
+
+.category__name {
+  color: var(--rose-50) !important;
+}
+
+.category__price {
+  color: white;
+}

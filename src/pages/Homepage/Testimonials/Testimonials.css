@@ -1,0 +1,109 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 10rem;
+  isolation: isolate;
+}
+@media only screen and (min-width: 62.5em) {
+  .testimonials {
+    flex-direction: row;
+    width: 80%;
+    margin-inline: auto;
+  }
+}
+
+.testimonial--first {
+  position: relative;
+}
+
+.testimonial--first::before {
+  content: url(../../../Assets/bg-quotes.png);
+  position: absolute;
+  top: -3.5rem;
+  left: 0;
+  scale: 0.5;
+}
+@media only screen and (min-width: 62.5em) {
+  .testimonial--first::before {
+    scale: 1;
+    z-index: -1;
+    left: -1rem;
+  }
+}
+
+.testimonial {
+  width: 85%;
+  margin-inline: auto;
+  background-color: var(--rose-50);
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+}
+.testimonial__text {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 62.5em) {
+  .testimonial__text {
+    font-size: 1.6rem;
+  }
+}
+.testimonial__person {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.testimonial__img {
+  border-radius: 100vw;
+  width: 4rem;
+  aspect-ratio: 1 /1;
+}
+@media only screen and (min-width: 62.5em) {
+  .testimonial__img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+.testimonial__person__name {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.15rem;
+}
+.testimonial__person__position {
+  font-size: 1.2rem;
+}
+.testimonial__person__data {
+  display: grid;
+}
+
+.view-all-btn {
+  color: var(--red);
+  border: 2px solid var(--red);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+
+  flex-shrink: 0;
+}
+
+.view-all-btn:hover {
+  background: color-mix(in srgb, var(--red), transparent 20%);
+  color: var(--rose-50);
+}
+
+@media (max-width: 768px) {
+  .view-all-btn {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .view-all-btn {
+    font-size: 12px;
+  }
+}

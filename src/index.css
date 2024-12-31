@@ -1,0 +1,116 @@
+/*
+BREAKPOINTS
+
+23.4375em = 375px
+*/
+
+/*VARIABLES*/
+:root {
+  --red: hsl(14, 86%, 42%);
+  --green: hsl(159, 69%, 38%);
+  --rose-50: hsl(20, 50%, 98%);
+  --rose-100: hsl(13, 29%, 94%);
+  --rose-300: hsl(14, 25%, 72%);
+  --rose-400: hsl(7, 20%, 60%);
+  --rose-500: hsl(12, 20%, 44%);
+  --rose-900: hsl(14, 65%, 9%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --gap-1: 0.4rem;
+  --gap-2: 0.8rem;
+  --gap-3: 1.2rem;
+  --gap-4: 1.6rem;
+  --gap-5: 2.4rem;
+  --gap-6: 3.2rem;
+  --gap-7: 4rem;
+  --gap-8: 8.8rem;
+}
+
+/*CSS RESET*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+@media screen and (width < 23.4375em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: var(--rose-50);
+  padding: var(--gap-5);
+}
+
+@media screen and (width >= 48em) {
+  body {
+    padding: var(--gap-7);
+  }
+}
+
+@media screen and (width >= 62.5em) {
+  body {
+    padding: var(--gap-8) 11.2rem;
+  }
+}
+
+/*UTILITY CLASSES*/
+.heading-1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.heading-2 {
+  font-size: 2.4rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.para-1 {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.para-2 {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.para-3 {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--green);
+}
+
+.main {
+  min-height: 100dvh;
+}
+
+.btn-primary {
+  background-color: var(--green) !important;
+  color: var(--rose-50) !important;
+  border-width: 0 !important;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin-top: 50px !important;
+  }
+}

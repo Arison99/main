@@ -1,0 +1,19 @@
+.mockup_section {
+  padding: 4rem 0;
+}
+
+.mockup_section .customers_number {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.customers_number h2 {
+  font-size: 3rem;
+}
+
+.customers_number p {
+  text-align: center;
+  margin-top: 0.5rem;
+}

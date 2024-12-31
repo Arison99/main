@@ -1,0 +1,31 @@
+.menuList {
+  margin: var(--gap-6) 0;
+  display: grid;
+  gap: var(--gap-5);
+}
+
+@media screen and (width >= 30em) {
+  .menuList {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: var(--gap-5);
+    row-gap: var(--gap-6);
+  }
+}
+
+@media screen and (width >= 48em) {
+  .menuList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (width >= 62.5em) {
+  .menuList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (width >= 90em) {
+  .menuList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
